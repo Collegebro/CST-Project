@@ -8,6 +8,8 @@
 <! –– Connor worked on the upload image part of our code ––>
 <! –– Ernesto worked on the filter changing part of the code ––>
 <! –– Sammy worked on the aspect ratio part of the code ––>
+
+<! –– Framework of Flask including the switches and color styles -->
 <!DOCTYPE html>
 
 <html lang="en">
@@ -25,6 +27,8 @@
 </style>
 </head>
 <body>
+
+
   <h1>Image Filters</h1>
   <select id="filterSelect">
     <option value="original">Original</option>
@@ -38,6 +42,8 @@
     <option value="square">Square (1:1)</option>
     <option value="wide">Wide (16:9)</option>
   </select>
+
+<! –– Function for the user to be able to upload an image into the flask application -->
   <input type="file" id="fileInput" accept="image/*">
   <div id="imageContainer">
     <img id="uploadedImage" src="#" alt="Uploaded Image">
@@ -61,6 +67,8 @@
     document.getElementById('aspectRatioSelect').addEventListener('change', function() {
     applyAspectRatio(this.value);
   });
+
+<! –– Function that changes the images color into black and white, iverted, normal, red or blueshift. -->
   function applyFilter(filter) {
     var image = document.getElementById('uploadedImage');
     switch (filter) {
@@ -84,6 +92,9 @@
         break;
     }
   }
+
+<! –– Aspect ratio choices in either standard, square in a 300 x 300 or wide in 480 X 270 -->
+
     function applyAspectRatio(aspectRatio) {
       var image = document.getElementById('uploadedImage');
       switch (aspectRatio) {
