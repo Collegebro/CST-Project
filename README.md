@@ -14,3 +14,9 @@ Wednesday May 15th 2024
 How to run the program:
 - Download file and enter code into VS code
 - flask -app project --debug run
+
+Link to Repository:
+https://github.com/Collegebro/CST-Project/blob/main/repository
+
+Link to Trello: 
+https://trello.com/invite/b/PqvPb34E/ATTI67c9c37542f5fccf8d5175d9f574abeeC43E4A7A/my-trello-board
